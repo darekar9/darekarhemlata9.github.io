@@ -11,67 +11,68 @@
 
     body {
       font-family: 'Lato', sans-serif;
-      background-color: #0d0800;
-      color: #f0e6d3;
+      background-color: #f5f0eb;
+      color: #2d0a0a;
     }
 
     /* HEADER */
     header {
-      background: linear-gradient(180deg, #1a0f00, #0d0800);
+      background: linear-gradient(135deg, #8b0000, #6b0000);
       text-align: center;
       padding: 30px 20px 20px;
-      border-bottom: 1px solid #b8860b;
+      border-bottom: 4px solid #ffffff;
     }
     .arabic-ornament {
       font-size: 1.5em;
-      color: #b8860b;
+      color: #ffffff;
       letter-spacing: 10px;
     }
     header h1 {
       font-family: 'Cinzel', serif;
       font-size: 3.5em;
-      color: #d4a96a;
+      color: #ffffff;
       letter-spacing: 12px;
       margin: 10px 0 5px;
     }
     header .arabic-text {
       font-size: 1.8em;
-      color: #b8860b;
+      color: #f0c9c9;
       margin-bottom: 5px;
       direction: rtl;
     }
     header p {
       font-size: 0.85em;
       letter-spacing: 4px;
-      color: #8a7a6a;
+      color: #f0c9c9;
     }
 
     /* NAV */
     nav {
-      background-color: #1a0f00;
+      background-color: #6b0000;
       display: flex;
       justify-content: center;
       gap: 40px;
       padding: 15px;
-      border-bottom: 1px solid #b8860b44;
+      border-bottom: 2px solid #ffffff33;
     }
     nav a {
-      color: #d4a96a;
+      color: #ffffff;
       text-decoration: none;
       font-size: 0.85em;
       letter-spacing: 3px;
       text-transform: uppercase;
     }
-    nav a:hover { color: #fff8ee; }
+    nav a:hover { color: #f0c9c9; }
 
     /* HERO */
     .hero {
-      background: linear-gradient(135deg, #1a0a00, #2d1500, #1a0a00);
+      background: linear-gradient(135deg, #8b0000, #5a0000, #8b0000);
+      color: white;
       text-align: center;
       padding: 100px 20px;
       position: relative;
       overflow: hidden;
-      border-bottom: 1px solid #b8860b44;
+      border-bottom: 4px solid #ffffff44;
     }
     .hero::before {
       content: '✦ ✦ ✦';
@@ -79,7 +80,7 @@
       top: 20px;
       left: 50%;
       transform: translateX(-50%);
-      color: #b8860b44;
+      color: #ffffff44;
       font-size: 1.5em;
       letter-spacing: 20px;
     }
@@ -89,32 +90,32 @@
       bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
-      color: #b8860b44;
+      color: #ffffff44;
       font-size: 1.5em;
       letter-spacing: 20px;
     }
     .hero .arabic-big {
       font-size: 3em;
-      color: #b8860b;
+      color: #f0c9c9;
       margin-bottom: 10px;
       direction: rtl;
     }
     .hero h2 {
       font-family: 'Cinzel', serif;
       font-size: 2.5em;
-      color: #f0e6d3;
+      color: #ffffff;
       letter-spacing: 6px;
       margin-bottom: 15px;
     }
     .hero p {
-      color: #8a7a6a;
+      color: #f0c9c9;
       letter-spacing: 3px;
       font-size: 0.9em;
       margin-bottom: 40px;
     }
     .hero button {
-      background: linear-gradient(135deg, #b8860b, #d4a96a);
-      color: #0d0800;
+      background: #ffffff;
+      color: #8b0000;
       border: none;
       padding: 16px 45px;
       font-size: 0.85em;
@@ -124,39 +125,40 @@
       font-weight: bold;
     }
     .hero button:hover {
-      background: linear-gradient(135deg, #d4a96a, #b8860b);
+      background: #f0c9c9;
     }
 
     /* DIVIDER */
     .divider {
       text-align: center;
       padding: 20px;
-      color: #b8860b;
+      color: #8b0000;
       font-size: 1.2em;
       letter-spacing: 15px;
+      background: #ffffff;
     }
 
     /* PRODUCTS */
     .products {
       padding: 60px 20px;
       text-align: center;
-      background-color: #0d0800;
+      background-color: #fff8f5;
     }
     .products h2 {
       font-family: 'Cinzel', serif;
       font-size: 2em;
-      color: #d4a96a;
+      color: #8b0000;
       letter-spacing: 6px;
       margin-bottom: 5px;
     }
     .products .arabic-sub {
       font-size: 1.4em;
-      color: #b8860b;
+      color: #8b0000;
       margin-bottom: 10px;
       direction: rtl;
     }
     .products p {
-      color: #8a7a6a;
+      color: #5a3a3a;
       letter-spacing: 2px;
       font-size: 0.85em;
       margin-bottom: 50px;
@@ -170,63 +172,70 @@
     }
 
     .product-card {
-      background: linear-gradient(180deg, #1a0f00, #110900);
-      border: 1px solid #b8860b44;
-      border-radius: 2px;
-      padding: 35px 25px;
+      background: #ffffff;
+      border: 1px solid #8b000033;
+      border-top: 4px solid #8b0000;
+      border-radius: 4px;
+      padding: 30px 25px;
       width: 260px;
       transition: all 0.4s;
       position: relative;
-    }
-    .product-card::before {
-      content: '';
-      position: absolute;
-      top: 8px; left: 8px; right: 8px; bottom: 8px;
-      border: 1px solid #b8860b22;
-      pointer-events: none;
+      box-shadow: 0 4px 15px rgba(139,0,0,0.1);
     }
     .product-card:hover {
-      border-color: #b8860b;
+      border-color: #8b0000;
       transform: translateY(-8px);
-      box-shadow: 0 15px 40px rgba(184,134,11,0.2);
+      box-shadow: 0 15px 40px rgba(139,0,0,0.2);
     }
 
-    .product-card .icon { font-size: 3.5em; margin-bottom: 15px; }
+    .product-card img {
+      width: 140px;
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      filter: drop-shadow(0 5px 15px rgba(139,0,0,0.3));
+      transition: transform 0.3s;
+    }
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+
     .product-card .arabic-name {
       font-size: 1.3em;
-      color: #b8860b;
+      color: #8b0000;
       margin-bottom: 5px;
       direction: rtl;
     }
     .product-card h3 {
       font-family: 'Cinzel', serif;
-      font-size: 1.1em;
-      color: #d4a96a;
+      font-size: 1em;
+      color: #2d0a0a;
       letter-spacing: 3px;
       margin-bottom: 12px;
     }
     .product-card p {
       font-size: 0.82em;
-      color: #8a7a6a;
+      color: #5a3a3a;
       line-height: 1.7;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
     .product-card .notes {
       font-size: 0.75em;
-      color: #b8860b;
+      color: #8b0000;
       letter-spacing: 2px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
     .product-card .price {
       font-family: 'Cinzel', serif;
       font-size: 1.4em;
-      color: #d4a96a;
+      color: #8b0000;
+      font-weight: bold;
       margin-bottom: 20px;
     }
     .product-card button {
-      background: transparent;
-      color: #d4a96a;
-      border: 1px solid #b8860b;
+      background: #8b0000;
+      color: #ffffff;
+      border: none;
       padding: 12px 25px;
       cursor: pointer;
       width: 100%;
@@ -236,29 +245,27 @@
       transition: all 0.3s;
     }
     .product-card button:hover {
-      background: linear-gradient(135deg, #b8860b, #d4a96a);
-      color: #0d0800;
+      background: #6b0000;
     }
 
     /* STORY SECTION */
     .story {
-      background: linear-gradient(135deg, #1a0a00, #0d0800);
+      background: linear-gradient(135deg, #8b0000, #6b0000);
       padding: 80px 20px;
       text-align: center;
-      border-top: 1px solid #b8860b44;
-      border-bottom: 1px solid #b8860b44;
+      color: white;
     }
     .story h2 {
       font-family: 'Cinzel', serif;
       font-size: 1.8em;
-      color: #d4a96a;
+      color: #ffffff;
       letter-spacing: 6px;
       margin-bottom: 20px;
     }
     .story p {
       max-width: 600px;
       margin: 0 auto;
-      color: #8a7a6a;
+      color: #f0c9c9;
       line-height: 2;
       font-size: 0.95em;
     }
@@ -270,39 +277,41 @@
       flex-wrap: wrap;
       gap: 50px;
       padding: 60px 20px;
-      background-color: #0d0800;
+      background-color: #ffffff;
       text-align: center;
     }
-    .feature .icon { font-size: 2em; margin-bottom: 10px; }
+    .feature .icon { font-size: 2.5em; margin-bottom: 10px; }
     .feature h3 {
-      color: #d4a96a;
+      color: #8b0000;
       letter-spacing: 2px;
       font-size: 0.85em;
       margin-bottom: 8px;
       text-transform: uppercase;
+      font-weight: bold;
     }
-    .feature p { font-size: 0.8em; color: #5a4a3a; }
+    .feature p { font-size: 0.8em; color: #5a3a3a; }
 
     /* FOOTER */
     footer {
-      background-color: #080400;
-      border-top: 1px solid #b8860b44;
+      background: linear-gradient(135deg, #6b0000, #8b0000);
+      border-top: 4px solid #ffffff33;
       text-align: center;
       padding: 40px 20px;
+      color: white;
     }
     footer .arabic-footer {
       font-size: 1.5em;
-      color: #b8860b;
+      color: #f0c9c9;
       margin-bottom: 10px;
     }
     footer h3 {
       font-family: 'Cinzel', serif;
-      color: #d4a96a;
+      color: #ffffff;
       letter-spacing: 8px;
       margin-bottom: 10px;
     }
-    footer p { color: #3a2a1a; font-size: 0.8em; letter-spacing: 2px; }
-    footer span { color: #b8860b; }
+    footer p { color: #f0c9c9; font-size: 0.8em; letter-spacing: 2px; }
+    footer span { color: #ffffff; font-weight: bold; }
   </style>
 </head>
 <body>
@@ -344,10 +353,10 @@
 
       <!-- Product 1 -->
       <div class="product-card">
-        <div class="icon">🪵</div>
+        <img src="https://images.unsplash.com/photo-1541643600914-78b084683702?w=300&q=80" alt="Oud Al Malik" />
         <div class="arabic-name">عود الملك</div>
         <h3>OUD AL MALIK</h3>
-        <p>The King's Oud — a majestic blend of aged Cambodian oud with saffron and dark amber</p>
+        <p>The King's Oud — aged Cambodian oud with saffron and dark amber</p>
         <div class="notes">✦ SAFFRON · OUD · AMBER ✦</div>
         <div class="price">₹4,999</div>
         <button>Add to Cart</button>
@@ -355,10 +364,10 @@
 
       <!-- Product 2 -->
       <div class="product-card">
-        <div class="icon">🌹</div>
+        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=300&q=80" alt="Ward Al Oud" />
         <div class="arabic-name">ورد العود</div>
         <h3>WARD AL OUD</h3>
-        <p>A romantic fusion of Taif rose with rich oud wood and a whisper of musk</p>
+        <p>Taif rose with rich oud wood and a whisper of musk</p>
         <div class="notes">✦ ROSE · OUD · MUSK ✦</div>
         <div class="price">₹3,999</div>
         <button>Add to Cart</button>
@@ -366,10 +375,10 @@
 
       <!-- Product 3 -->
       <div class="product-card">
-        <div class="icon">🌙</div>
+        <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=300&q=80" alt="Lail Al Oud" />
         <div class="arabic-name">ليل العود</div>
         <h3>LAIL AL OUD</h3>
-        <p>Night of Oud — deep smoky oud layered with black pepper, vetiver and vanilla</p>
+        <p>Deep smoky oud layered with black pepper, vetiver and vanilla</p>
         <div class="notes">✦ SMOKE · OUD · VANILLA ✦</div>
         <div class="price">₹5,499</div>
         <button>Add to Cart</button>
@@ -377,10 +386,10 @@
 
       <!-- Product 4 -->
       <div class="product-card">
-        <div class="icon">✨</div>
+        <img src="https://images.unsplash.com/photo-1619994403073-2cec844b8e63?w=300&q=80" alt="Dahab Al Oud" />
         <div class="arabic-name">ذهب العود</div>
         <h3>DAHAB AL OUD</h3>
-        <p>Golden Oud — a luminous blend of Indian oud with sandalwood and golden amber</p>
+        <p>Indian oud with sandalwood and golden amber — luminous and warm</p>
         <div class="notes">✦ SANDALWOOD · OUD · GOLD ✦</div>
         <div class="price">₹6,999</div>
         <button>Add to Cart</button>
