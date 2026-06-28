@@ -661,6 +661,56 @@
       document.getElementById(category).classList.add('active');
       event.target.classList.add('active');
     }
+    <script>
+    // Category tabs
+    function showCategory(category) {
+      document.querySelectorAll('.product-category').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(category).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    // Smooth scroll navigation
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const text = this.textContent.trim().toLowerCase();
+
+        let target = null;
+        if (text === 'home') target = document.querySelector('.hero');
+        if (text === 'men') {
+          target = document.querySelector('.category-section');
+          showCategoryByName('men');
+        }
+        if (text === 'women') {
+          target = document.querySelector('.category-section');
+          showCategoryByName('women');
+        }
+        if (text === 'collections') {
+          target = document.querySelector('.category-section');
+          showCategoryByName('unisex');
+        }
+        if (text === 'our story') target = document.querySelector('.story');
+        if (text === 'about') target = document.querySelector('.about');
+        if (text === 'contact') target = document.querySelector('.contact');
+
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    function showCategoryByName(category) {
+      document.querySelectorAll('.product-category').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(category).classList.add('active');
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        if (btn.textContent.toLowerCase().includes(category)) {
+          btn.classList.add('active');
+        }
+      });
+    }
+</script>
   </script>
 
 </body>
