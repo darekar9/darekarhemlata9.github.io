@@ -3,74 +3,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Luxe Perfumes</title>
+  <title>Areej - Arabian Oud Perfumes</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&display=swap');
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Georgia', serif;
-      background-color: #fff8f0;
-      color: #3b2a1a;
+      font-family: 'Lato', sans-serif;
+      background-color: #0d0800;
+      color: #f0e6d3;
     }
 
     /* HEADER */
     header {
-      background-color: #3b2a1a;
-      color: #f5e6d3;
+      background: linear-gradient(180deg, #1a0f00, #0d0800);
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px 20px;
+      border-bottom: 1px solid #b8860b;
     }
-    header h1 { font-size: 2.5em; letter-spacing: 4px; }
-    header p { font-size: 0.9em; letter-spacing: 2px; color: #d4a96a; }
+    .arabic-ornament {
+      font-size: 1.5em;
+      color: #b8860b;
+      letter-spacing: 10px;
+    }
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 3.5em;
+      color: #d4a96a;
+      letter-spacing: 12px;
+      margin: 10px 0 5px;
+    }
+    header .arabic-text {
+      font-size: 1.8em;
+      color: #b8860b;
+      margin-bottom: 5px;
+      direction: rtl;
+    }
+    header p {
+      font-size: 0.85em;
+      letter-spacing: 4px;
+      color: #8a7a6a;
+    }
 
-    /* NAVIGATION */
+    /* NAV */
     nav {
-      background-color: #5c3d2e;
+      background-color: #1a0f00;
       display: flex;
       justify-content: center;
-      gap: 30px;
-      padding: 12px;
+      gap: 40px;
+      padding: 15px;
+      border-bottom: 1px solid #b8860b44;
     }
     nav a {
-      color: #f5e6d3;
+      color: #d4a96a;
       text-decoration: none;
-      font-size: 0.95em;
-      letter-spacing: 1px;
+      font-size: 0.85em;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
-    nav a:hover { color: #d4a96a; }
+    nav a:hover { color: #fff8ee; }
 
     /* HERO */
     .hero {
-      background: linear-gradient(135deg, #3b2a1a, #7a4f2e);
-      color: #f5e6d3;
+      background: linear-gradient(135deg, #1a0a00, #2d1500, #1a0a00);
       text-align: center;
-      padding: 80px 20px;
+      padding: 100px 20px;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid #b8860b44;
     }
-    .hero h2 { font-size: 2.5em; margin-bottom: 15px; }
-    .hero p { font-size: 1.1em; color: #d4a96a; margin-bottom: 30px; }
+    .hero::before {
+      content: '✦ ✦ ✦';
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #b8860b44;
+      font-size: 1.5em;
+      letter-spacing: 20px;
+    }
+    .hero::after {
+      content: '✦ ✦ ✦';
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #b8860b44;
+      font-size: 1.5em;
+      letter-spacing: 20px;
+    }
+    .hero .arabic-big {
+      font-size: 3em;
+      color: #b8860b;
+      margin-bottom: 10px;
+      direction: rtl;
+    }
+    .hero h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5em;
+      color: #f0e6d3;
+      letter-spacing: 6px;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      color: #8a7a6a;
+      letter-spacing: 3px;
+      font-size: 0.9em;
+      margin-bottom: 40px;
+    }
     .hero button {
-      background-color: #d4a96a;
-      color: #3b2a1a;
+      background: linear-gradient(135deg, #b8860b, #d4a96a);
+      color: #0d0800;
       border: none;
-      padding: 14px 35px;
-      font-size: 1em;
+      padding: 16px 45px;
+      font-size: 0.85em;
+      letter-spacing: 4px;
       cursor: pointer;
-      letter-spacing: 2px;
-      border-radius: 3px;
+      text-transform: uppercase;
+      font-weight: bold;
     }
-    .hero button:hover { background-color: #c49050; }
+    .hero button:hover {
+      background: linear-gradient(135deg, #d4a96a, #b8860b);
+    }
+
+    /* DIVIDER */
+    .divider {
+      text-align: center;
+      padding: 20px;
+      color: #b8860b;
+      font-size: 1.2em;
+      letter-spacing: 15px;
+    }
 
     /* PRODUCTS */
     .products {
-      text-align: center;
       padding: 60px 20px;
+      text-align: center;
+      background-color: #0d0800;
     }
     .products h2 {
+      font-family: 'Cinzel', serif;
       font-size: 2em;
-      margin-bottom: 10px;
-      color: #3b2a1a;
+      color: #d4a96a;
+      letter-spacing: 6px;
+      margin-bottom: 5px;
     }
-    .products p { color: #7a4f2e; margin-bottom: 40px; }
+    .products .arabic-sub {
+      font-size: 1.4em;
+      color: #b8860b;
+      margin-bottom: 10px;
+      direction: rtl;
+    }
+    .products p {
+      color: #8a7a6a;
+      letter-spacing: 2px;
+      font-size: 0.85em;
+      margin-bottom: 50px;
+    }
 
     .product-grid {
       display: flex;
@@ -80,151 +170,270 @@
     }
 
     .product-card {
-      background: white;
-      border-radius: 10px;
-      padding: 25px;
-      width: 250px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+      background: linear-gradient(180deg, #1a0f00, #110900);
+      border: 1px solid #b8860b44;
+      border-radius: 2px;
+      padding: 35px 25px;
+      width: 260px;
+      transition: all 0.4s;
+      position: relative;
     }
-    .product-card:hover { transform: translateY(-5px); }
+    .product-card::before {
+      content: '';
+      position: absolute;
+      top: 8px; left: 8px; right: 8px; bottom: 8px;
+      border: 1px solid #b8860b22;
+      pointer-events: none;
+    }
+    .product-card:hover {
+      border-color: #b8860b;
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(184,134,11,0.2);
+    }
 
-    .product-card .emoji { font-size: 4em; margin-bottom: 15px; }
-    .product-card h3 { font-size: 1.2em; margin-bottom: 8px; color: #3b2a1a; }
-    .product-card p { font-size: 0.85em; color: #7a4f2e; margin-bottom: 15px; }
-    .product-card .price {
+    .product-card .icon { font-size: 3.5em; margin-bottom: 15px; }
+    .product-card .arabic-name {
       font-size: 1.3em;
-      font-weight: bold;
+      color: #b8860b;
+      margin-bottom: 5px;
+      direction: rtl;
+    }
+    .product-card h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.1em;
       color: #d4a96a;
-      margin-bottom: 15px;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+    .product-card p {
+      font-size: 0.82em;
+      color: #8a7a6a;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .product-card .notes {
+      font-size: 0.75em;
+      color: #b8860b;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    .product-card .price {
+      font-family: 'Cinzel', serif;
+      font-size: 1.4em;
+      color: #d4a96a;
+      margin-bottom: 20px;
     }
     .product-card button {
-      background-color: #3b2a1a;
-      color: #f5e6d3;
-      border: none;
-      padding: 10px 25px;
+      background: transparent;
+      color: #d4a96a;
+      border: 1px solid #b8860b;
+      padding: 12px 25px;
       cursor: pointer;
-      border-radius: 3px;
       width: 100%;
-      letter-spacing: 1px;
+      letter-spacing: 3px;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      transition: all 0.3s;
     }
-    .product-card button:hover { background-color: #5c3d2e; }
+    .product-card button:hover {
+      background: linear-gradient(135deg, #b8860b, #d4a96a);
+      color: #0d0800;
+    }
+
+    /* STORY SECTION */
+    .story {
+      background: linear-gradient(135deg, #1a0a00, #0d0800);
+      padding: 80px 20px;
+      text-align: center;
+      border-top: 1px solid #b8860b44;
+      border-bottom: 1px solid #b8860b44;
+    }
+    .story h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.8em;
+      color: #d4a96a;
+      letter-spacing: 6px;
+      margin-bottom: 20px;
+    }
+    .story p {
+      max-width: 600px;
+      margin: 0 auto;
+      color: #8a7a6a;
+      line-height: 2;
+      font-size: 0.95em;
+    }
 
     /* FEATURES */
     .features {
-      background-color: #3b2a1a;
-      color: #f5e6d3;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 40px;
-      padding: 50px 20px;
+      gap: 50px;
+      padding: 60px 20px;
+      background-color: #0d0800;
       text-align: center;
     }
-    .feature h3 { color: #d4a96a; margin-bottom: 8px; font-size: 1.1em; }
-    .feature p { font-size: 0.85em; color: #c4b5a5; }
+    .feature .icon { font-size: 2em; margin-bottom: 10px; }
+    .feature h3 {
+      color: #d4a96a;
+      letter-spacing: 2px;
+      font-size: 0.85em;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .feature p { font-size: 0.8em; color: #5a4a3a; }
 
     /* FOOTER */
     footer {
-      background-color: #2a1a0e;
-      color: #c4b5a5;
+      background-color: #080400;
+      border-top: 1px solid #b8860b44;
       text-align: center;
-      padding: 30px;
-      font-size: 0.85em;
+      padding: 40px 20px;
     }
-    footer span { color: #d4a96a; }
+    footer .arabic-footer {
+      font-size: 1.5em;
+      color: #b8860b;
+      margin-bottom: 10px;
+    }
+    footer h3 {
+      font-family: 'Cinzel', serif;
+      color: #d4a96a;
+      letter-spacing: 8px;
+      margin-bottom: 10px;
+    }
+    footer p { color: #3a2a1a; font-size: 0.8em; letter-spacing: 2px; }
+    footer span { color: #b8860b; }
   </style>
 </head>
 <body>
 
   <!-- HEADER -->
   <header>
-    <h1>🌹 LUXE PERFUMES</h1>
-    <p>ELEGANCE IN EVERY DROP</p>
+    <div class="arabic-ornament">❧ ✦ ❧</div>
+    <div class="arabic-text">أريج</div>
+    <h1>AREEJ</h1>
+    <p>ARABIAN OUD & LUXURY FRAGRANCES</p>
   </header>
 
   <!-- NAV -->
   <nav>
     <a href="#">Home</a>
-    <a href="#">Shop</a>
     <a href="#">Collections</a>
-    <a href="#">About</a>
+    <a href="#">Our Story</a>
+    <a href="#">Ingredients</a>
     <a href="#">Contact</a>
   </nav>
 
   <!-- HERO -->
-  <div class="hero">
-    <h2>Discover Your Signature Scent</h2>
-    <p>Luxury perfumes crafted for the modern soul</p>
-    <button>SHOP NOW</button>
-  </div>
+  <section class="hero">
+    <div class="arabic-big">عطر العود الملكي</div>
+    <h2>WHERE TRADITION MEETS LUXURY</h2>
+    <p>HANDCRAFTED ARABIAN FRAGRANCES SINCE 1998</p>
+    <button>Explore Collection</button>
+  </section>
+
+  <div class="divider">✦ &nbsp; ✦ &nbsp; ✦</div>
 
   <!-- PRODUCTS -->
   <section class="products">
-    <h2>Our Collections</h2>
-    <p>Handpicked fragrances for every occasion</p>
+    <h2>OUR OUD COLLECTION</h2>
+    <div class="arabic-sub">مجموعة العود</div>
+    <p>RARE INGREDIENTS · TIMELESS SCENTS · ROYAL HERITAGE</p>
 
     <div class="product-grid">
 
+      <!-- Product 1 -->
       <div class="product-card">
-        <div class="emoji">🌸</div>
-        <h3>Rose Elixir</h3>
-        <p>A delicate blend of Bulgarian rose and soft musk</p>
-        <div class="price">₹2,499</div>
+        <div class="icon">🪵</div>
+        <div class="arabic-name">عود الملك</div>
+        <h3>OUD AL MALIK</h3>
+        <p>The King's Oud — a majestic blend of aged Cambodian oud with saffron and dark amber</p>
+        <div class="notes">✦ SAFFRON · OUD · AMBER ✦</div>
+        <div class="price">₹4,999</div>
         <button>Add to Cart</button>
       </div>
 
+      <!-- Product 2 -->
       <div class="product-card">
-        <div class="emoji">🌊</div>
-        <h3>Ocean Breeze</h3>
-        <p>Fresh aquatic notes with a hint of driftwood</p>
-        <div class="price">₹1,999</div>
+        <div class="icon">🌹</div>
+        <div class="arabic-name">ورد العود</div>
+        <h3>WARD AL OUD</h3>
+        <p>A romantic fusion of Taif rose with rich oud wood and a whisper of musk</p>
+        <div class="notes">✦ ROSE · OUD · MUSK ✦</div>
+        <div class="price">₹3,999</div>
         <button>Add to Cart</button>
       </div>
 
+      <!-- Product 3 -->
       <div class="product-card">
-        <div class="emoji">🌙</div>
-        <h3>Midnight Oud</h3>
-        <p>Rich oud wood with warm amber and spice</p>
-        <div class="price">₹3,499</div>
+        <div class="icon">🌙</div>
+        <div class="arabic-name">ليل العود</div>
+        <h3>LAIL AL OUD</h3>
+        <p>Night of Oud — deep smoky oud layered with black pepper, vetiver and vanilla</p>
+        <div class="notes">✦ SMOKE · OUD · VANILLA ✦</div>
+        <div class="price">₹5,499</div>
         <button>Add to Cart</button>
       </div>
 
+      <!-- Product 4 -->
       <div class="product-card">
-        <div class="emoji">🍋</div>
-        <h3>Citrus Bloom</h3>
-        <p>Zesty lemon and bergamot with floral heart</p>
-        <div class="price">₹1,799</div>
+        <div class="icon">✨</div>
+        <div class="arabic-name">ذهب العود</div>
+        <h3>DAHAB AL OUD</h3>
+        <p>Golden Oud — a luminous blend of Indian oud with sandalwood and golden amber</p>
+        <div class="notes">✦ SANDALWOOD · OUD · GOLD ✦</div>
+        <div class="price">₹6,999</div>
         <button>Add to Cart</button>
       </div>
 
     </div>
+  </section>
+
+  <div class="divider">❧ &nbsp; ✦ &nbsp; ❧</div>
+
+  <!-- STORY -->
+  <section class="story">
+    <h2>THE AREEJ STORY</h2>
+    <p>
+      Born from the ancient souks of Arabia, Areej (أريج) means
+      "the fragrance that fills the air." For generations, we have
+      sourced the finest oud wood from the forests of Cambodia,
+      India, and Borneo — hand-selected by master perfumers to
+      create scents that tell stories of desert nights, royal palaces,
+      and timeless traditions.
+    </p>
   </section>
 
   <!-- FEATURES -->
   <section class="features">
     <div class="feature">
-      <h3>🚚 Free Shipping</h3>
-      <p>On orders above ₹999</p>
+      <div class="icon">🪵</div>
+      <h3>Pure Oud Wood</h3>
+      <p>Sourced from ancient forests</p>
     </div>
     <div class="feature">
-      <h3>💯 100% Authentic</h3>
-      <p>Genuine luxury fragrances</p>
+      <div class="icon">🤲</div>
+      <h3>Handcrafted</h3>
+      <p>By master Arabian perfumers</p>
     </div>
     <div class="feature">
-      <h3>🎁 Gift Wrapping</h3>
-      <p>Free gift wrap on request</p>
+      <div class="icon">🚚</div>
+      <h3>Free Shipping</h3>
+      <p>On orders above ₹1999</p>
     </div>
     <div class="feature">
-      <h3>↩️ Easy Returns</h3>
-      <p>7 day return policy</p>
+      <div class="icon">🎁</div>
+      <h3>Luxury Packaging</h3>
+      <p>Royal gift boxes available</p>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2024 <span>Luxe Perfumes</span>. All rights reserved.</p>
-    <p>Made with ❤️ for fragrance lovers</p>
+    <div class="arabic-footer">أريج</div>
+    <h3>AREEJ</h3>
+    <p>© 2024 <span>Areej Perfumes</span>. All Rights Reserved.</p>
+    <p>CRAFTED WITH LOVE · INSPIRED BY ARABIA</p>
   </footer>
 
 </body>
