@@ -1,10 +1,231 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Website</title>
-  </head>
-  <body>
-    <h1>Hello! This is my website!</h1>
-    <p>Welcome to my first website!</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luxe Perfumes</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fff8f0;
+      color: #3b2a1a;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #3b2a1a;
+      color: #f5e6d3;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 { font-size: 2.5em; letter-spacing: 4px; }
+    header p { font-size: 0.9em; letter-spacing: 2px; color: #d4a96a; }
+
+    /* NAVIGATION */
+    nav {
+      background-color: #5c3d2e;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 12px;
+    }
+    nav a {
+      color: #f5e6d3;
+      text-decoration: none;
+      font-size: 0.95em;
+      letter-spacing: 1px;
+    }
+    nav a:hover { color: #d4a96a; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #3b2a1a, #7a4f2e);
+      color: #f5e6d3;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2 { font-size: 2.5em; margin-bottom: 15px; }
+    .hero p { font-size: 1.1em; color: #d4a96a; margin-bottom: 30px; }
+    .hero button {
+      background-color: #d4a96a;
+      color: #3b2a1a;
+      border: none;
+      padding: 14px 35px;
+      font-size: 1em;
+      cursor: pointer;
+      letter-spacing: 2px;
+      border-radius: 3px;
+    }
+    .hero button:hover { background-color: #c49050; }
+
+    /* PRODUCTS */
+    .products {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .products h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #3b2a1a;
+    }
+    .products p { color: #7a4f2e; margin-bottom: 40px; }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      width: 250px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .product-card:hover { transform: translateY(-5px); }
+
+    .product-card .emoji { font-size: 4em; margin-bottom: 15px; }
+    .product-card h3 { font-size: 1.2em; margin-bottom: 8px; color: #3b2a1a; }
+    .product-card p { font-size: 0.85em; color: #7a4f2e; margin-bottom: 15px; }
+    .product-card .price {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #d4a96a;
+      margin-bottom: 15px;
+    }
+    .product-card button {
+      background-color: #3b2a1a;
+      color: #f5e6d3;
+      border: none;
+      padding: 10px 25px;
+      cursor: pointer;
+      border-radius: 3px;
+      width: 100%;
+      letter-spacing: 1px;
+    }
+    .product-card button:hover { background-color: #5c3d2e; }
+
+    /* FEATURES */
+    .features {
+      background-color: #3b2a1a;
+      color: #f5e6d3;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .feature h3 { color: #d4a96a; margin-bottom: 8px; font-size: 1.1em; }
+    .feature p { font-size: 0.85em; color: #c4b5a5; }
+
+    /* FOOTER */
+    footer {
+      background-color: #2a1a0e;
+      color: #c4b5a5;
+      text-align: center;
+      padding: 30px;
+      font-size: 0.85em;
+    }
+    footer span { color: #d4a96a; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🌹 LUXE PERFUMES</h1>
+    <p>ELEGANCE IN EVERY DROP</p>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Collections</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h2>Discover Your Signature Scent</h2>
+    <p>Luxury perfumes crafted for the modern soul</p>
+    <button>SHOP NOW</button>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="products">
+    <h2>Our Collections</h2>
+    <p>Handpicked fragrances for every occasion</p>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="emoji">🌸</div>
+        <h3>Rose Elixir</h3>
+        <p>A delicate blend of Bulgarian rose and soft musk</p>
+        <div class="price">₹2,499</div>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="emoji">🌊</div>
+        <h3>Ocean Breeze</h3>
+        <p>Fresh aquatic notes with a hint of driftwood</p>
+        <div class="price">₹1,999</div>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="emoji">🌙</div>
+        <h3>Midnight Oud</h3>
+        <p>Rich oud wood with warm amber and spice</p>
+        <div class="price">₹3,499</div>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="emoji">🍋</div>
+        <h3>Citrus Bloom</h3>
+        <p>Zesty lemon and bergamot with floral heart</p>
+        <div class="price">₹1,799</div>
+        <button>Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature">
+      <h3>🚚 Free Shipping</h3>
+      <p>On orders above ₹999</p>
+    </div>
+    <div class="feature">
+      <h3>💯 100% Authentic</h3>
+      <p>Genuine luxury fragrances</p>
+    </div>
+    <div class="feature">
+      <h3>🎁 Gift Wrapping</h3>
+      <p>Free gift wrap on request</p>
+    </div>
+    <div class="feature">
+      <h3>↩️ Easy Returns</h3>
+      <p>7 day return policy</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2024 <span>Luxe Perfumes</span>. All rights reserved.</p>
+    <p>Made with ❤️ for fragrance lovers</p>
+  </footer>
+
+</body>
 </html>
